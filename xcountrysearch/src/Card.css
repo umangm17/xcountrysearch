@@ -5,16 +5,21 @@
   align-items: center;
   width: 100%;
   gap: 10px;
-  object-fit: cover;
+}
+.Countrycard {
   border: 1px solid #ddd;
   border-radius: 5px;
-}
-.CountryCard {
   padding: 20px;
+  width: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Container img {
-  width: 100px; /* Fixed width for images */
-  height: 60px; /* Fixed height for images */
-  margin-bottom: 10px; /* Space between image and text */
+  width: 150px;
+  height: 200px;
+  /* object-fit: cover; */
+  margin-bottom: 10px;
 }

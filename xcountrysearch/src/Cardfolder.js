@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import { useState, useEffect } from "react";
-// import "./Card.css";
+import "./Card.css";
 
 function Card({ countries }) {
   return (
-    <div className="results">
+    <div className="Container">
       {countries.length > 0 ? (
         countries.map((country) => (
-          <div key={country.cca3} className="Container">
+          <div key={country.cca3} className="Countrycard">
             <img
               src={country.flags?.svg}
               alt={`Flag of ${country.name.common}`}
-              style={{ width: "150px", height: "200px", marginRight: "10px" }}
             />
             <div>{country.name.common}</div>
           </div>
