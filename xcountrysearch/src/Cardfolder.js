@@ -7,7 +7,7 @@ function Card({ countries }) {
     <div className="Container">
       {countries.length > 0 ? (
         countries.map((country) => (
-          <div key={country.cca3} className="Countrycard">
+          <div key={country.cca3} className="countryCard">
             <img
               src={country.flags?.svg}
               alt={`Flag of ${country.name.common}`}
